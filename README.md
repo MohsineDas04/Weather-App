@@ -1,8 +1,10 @@
-# React + Vite
+🌤️ Global Weather Finder
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Global Weather Finder is a weather application that allows users to search for the current weather in any city worldwide. Powered by the OpenWeather API, the app provides up-to-date weather details for users on demand.
+Key Features:
 
-Currently, two official plugins are available:
+    City Search: Enter the name of any city globally to get real-time weather updates, including temperature, humidity, and weather conditions.
+    Multi-Language Support: The app offers a seamless language switch between English and Arabic, enabled by the i18next library.
+    API Integration: API requests are handled with the axiosJS library, ensuring smooth and efficient data fetching.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This app delivers a simple and user-friendly experience with cross-language support, making weather information accessible to a broader audience.
