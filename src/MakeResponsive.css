@@ -1,0 +1,34 @@
+@media screen and (max-width: 691px) {
+   .Weather {
+      flex-direction: column;
+      height: fit-content;
+   }
+   .App{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    justify-content: space-between;
+   }
+   .SearchBar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 10px 0;
+   }
+   .InputsCont{
+    display: flex;
+    flex-direction: column;
+   }
+   #TextInside{
+    font-size: 32px;
+   }
+   .WeatherHeat{
+    font-size: smaller;
+   }
+   #ImgH{
+    width: 150px;
+    height: 150px;
+   }
+}

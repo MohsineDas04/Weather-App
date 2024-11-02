@@ -1,0 +1,56 @@
+
+
+.loader {
+   display: block;
+}
+
+.Container {
+   height: 60vh;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   margin-top: 1rem;
+   font-family: "Kodchasan", sans-serif;
+   gap: 1.2rem;
+}
+.Weather {
+   background: linear-gradient(to right, #000000 5%, #0d1d00e7, #434343dc 95%);
+   width: 60%;
+   height: 60%;
+   border-radius: 2rem;
+   padding: 2.5rem 1.5rem;
+   color: white;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+}
+
+.WeatherHeat {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   width: 30%;
+   padding: 1rem;
+   gap: 1rem;
+}
+.SearchBar {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 1.5rem;
+}
+#InpSearch {
+   padding: 3px 15px;
+   width: 200px;
+   font-size: 1rem;
+   outline: none;
+   font-family: "Kodchasan", sans-serif;
+   margin: 0 3px;
+}
+#InpSearch::placeholder {
+   font-size: 1rem;
+   font-family: Arial, Helvetica, sans-serif;
+   letter-spacing: 1px;
+}
