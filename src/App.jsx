@@ -4,7 +4,6 @@ import WeatherContainer from "./WeatherContainer";
 import NavBar from "./NavBar";
 import { useTranslation } from "react-i18next";
 import { useEffect, useState } from "react";
-
 function App() {
    const { t, i18n } = useTranslation(); // This gives you access to the translation function
    const [language, setLanguage] = useState("en");
@@ -15,32 +14,53 @@ function App() {
    return (
       <>
          <div className="App" style={{ direction: dir }}>
-            <button
-               onClick={() => {
-                  i18n.changeLanguage("en");
-                  setLanguage("en");
-               }}
-            >
-               en
-            </button>
-            <button
-               onClick={() => {
-                  i18n.changeLanguage("ar");
-                  setLanguage("ar");
-               }}
-            >
-               ar
-            </button>
+            {language == "ar" ? (
+               <button
+                  onClick={() => {
+                     setTimeout(() => {
+                        i18n.changeLanguage("en");
+                     }, 100);
+                     setLanguage("en");
+                  }}
+                  style={{
+                     background: "none",
+                     outline: "none",
+                     color: "black",
+                     border: "none",
+                     fontSize: "larger",
+                  }}
+               >
+                  الانجليزية
+               </button>
+            ) : (
+               ""
+            )}
+            {language == "en" ? (
+               <button
+                  onClick={() => {
+                     setTimeout(() => {
+                        i18n.changeLanguage("ar");
+                     }, 100);
 
-            <div>
-               <NavBar />
-            </div>
+                     setLanguage("ar");
+                  }}
+                  style={{
+                     background: "none",
+                     outline: "none",
+                     color: "black",
+                     border: "none",
+                     fontSize: "larger",
+                  }}
+               >
+                  Arabic
+               </button>
+            ) : (
+               ""
+            )}
 
-            <div>
-               <Routes>
-                  <Route path="/Weather" element={<WeatherContainer />} />
-               </Routes>
-            </div>
+            <WeatherContainer />
+
+            <div></div>
          </div>
       </>
    );
